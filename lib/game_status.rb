@@ -50,7 +50,8 @@ end
 
 def winner(board)
   if won?(board) == true
-    board(win_index_1).select do |winner|
+    WIN_COMBINATIONS.select do |combo|
+      board(combo[0])
     end
   end
 end
