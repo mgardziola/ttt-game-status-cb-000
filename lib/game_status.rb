@@ -49,7 +49,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
+  if over?(board)
      WIN_COMBINATIONS.select do |combo|
      board(combo[0])
     end
