@@ -50,7 +50,7 @@ end
 
 def winner(board)
   if won?(board) == true
-    WIN_COMBINATIONS.select do |combo|
+    puts WIN_COMBINATIONS.select do |combo|
       board(combo[0])
     end
   end
