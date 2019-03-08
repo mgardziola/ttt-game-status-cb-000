@@ -50,8 +50,9 @@ end
 
 def winner(board)
   if over?(board)
-     WIN_COMBINATIONS.select do |combo|
-     board(combo[0])
+    winner = won?(board)
+    
+    return board(0)
     end
   end
 end
