@@ -49,9 +49,8 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
-    return board(win_index_1).detect do |winner|
-      puts winner 
+  if won?(board) == true
+    puts board(win_index_1).detect do |winner|
     end
   end
 end
