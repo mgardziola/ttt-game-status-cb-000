@@ -50,7 +50,7 @@ end
 
 def winner(board)
   if won?(board) == true
-    puts board(win_index_1).detect do |winner|
+    board(win_index_1).detect do |winner|
     end
   end
 end
