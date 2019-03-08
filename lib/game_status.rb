@@ -50,5 +50,8 @@ end
 
 def winner(board)
   if win?(board)
-    return 
+    return board(win_index_1).detect do |winner|
+      puts winner 
+    end
+  end
 end
