@@ -51,7 +51,6 @@ end
 def winner(board)
   if won?(board) == true
     board(win_index_1).select do |winner|
-      puts winner
     end
   end
 end
