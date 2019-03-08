@@ -49,7 +49,7 @@ def over?(board)
 end
 
 def winner(board)
-  if win?(board)
+  if won?(board)
     return board(win_index_1).detect do |winner|
       puts winner 
     end
